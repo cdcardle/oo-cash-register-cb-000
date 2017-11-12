@@ -8,6 +8,10 @@ class CashRegister
     @total = 0
   end
 
+  def self.all
+    @@all
+  end
+
   def self.total
     @total
   end
@@ -27,6 +31,6 @@ class CashRegister
   end
 
   def self.items
-    
+
   end
 end
