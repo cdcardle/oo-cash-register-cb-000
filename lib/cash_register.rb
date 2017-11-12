@@ -1,6 +1,6 @@
 class CashRegister
 
-  attr_accessor :discount, :total, :title, :items
+  attr_accessor :discount, :total, :title, :items, :price
 
   def initialize(discount = nil)
     @discount = discount
@@ -15,6 +15,7 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     @title = title
     @total += (price * quantity)
+    @price = price
     quantity.times {|i| self.items << title}
   end
 
