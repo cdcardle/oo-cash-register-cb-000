@@ -28,6 +28,6 @@ class CashRegister
   end
 
   def self.items
-    self.all.
+    self.all
   end
 end
