@@ -19,12 +19,13 @@ class CashRegister
   end
 
   def apply_discount
-    if @discount == nil
-      return "There is no discount to apply."
-    else
-      @total *= (1 - (@discount / 100.0))
-    end
+    @discount == nil ? return "There is no discount to apply." : @total *= (1 - (@discount / 100.0))
     return "After the discount, the total comes to $#{@total.to_i}."
   end
 
+  def void_last_transaction
+    
+  end
+  
+end
 end
