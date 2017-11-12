@@ -22,7 +22,7 @@ class CashRegister
     else
       puts "There is no discount to apply."
     end
-    return "After the discount, the total comes to $#{@total}."
+    return "After the discount, the total comes to $#{@total.to_i}."
   end
 
   def self.items
